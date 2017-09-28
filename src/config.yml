@@ -1,0 +1,83 @@
+########################################################################################
+# ────────────────────────────────────────────────────────────────────────────────────── #
+# ─██████████████─██████──██████─██████──██████─██████──────────██████─██████──████████─ #
+# ─██░░░░░░░░░░██─██░░██──██░░██─██░░██──██░░██─██░░██████████──██░░██─██░░██──██░░░░██─ #
+# ─██░░██████████─██░░██──██░░██─██░░██──██░░██─██░░░░░░░░░░██──██░░██─██░░██──██░░████─ #
+# ─██░░██─────────██░░██──██░░██─██░░██──██░░██─██░░██████░░██──██░░██─██░░██──██░░██─── #
+# ─██░░██─────────██░░██████░░██─██░░██──██░░██─██░░██──██░░██──██░░██─██░░██████░░██─── #
+# ─██░░██─────────██░░░░░░░░░░██─██░░██──██░░██─██░░██──██░░██──██░░██─██░░░░░░░░░░██─── #
+# ─██░░██─────────██░░██████░░██─██░░██──██░░██─██░░██──██░░██──██░░██─██░░██████░░██─── #
+# ─██░░██─────────██░░██──██░░██─██░░██──██░░██─██░░██──██░░██████░░██─██░░██──██░░██─── #
+# ─██░░██████████─██░░██──██░░██─██░░██████░░██─██░░██──██░░░░░░░░░░██─██░░██──██░░████─ #
+# ─██░░░░░░░░░░██─██░░██──██░░██─██░░░░░░░░░░██─██░░██──██████████░░██─██░░██──██░░░░██─ #
+# ─██████████████─██████──██████─██████████████─██████──────────██████─██████──████████─ #
+# ────────────────────────────────────────────────────────────────────────────────────── ##########
+# ─────────────────────────────────────────────────────────────────────────────────────────────── #
+# ─██████████████───██████─────────██████████████─██████████████─██████──████████─██████████████─ #
+# ─██░░░░░░░░░░██───██░░██─────────██░░░░░░░░░░██─██░░░░░░░░░░██─██░░██──██░░░░██─██░░░░░░░░░░██─ #
+# ─██░░██████░░██───██░░██─────────██░░██████░░██─██░░██████████─██░░██──██░░████─██░░██████████─ #
+# ─██░░██──██░░██───██░░██─────────██░░██──██░░██─██░░██─────────██░░██──██░░██───██░░██───────── #
+# ─██░░██████░░████─██░░██─────────██░░██──██░░██─██░░██─────────██░░██████░░██───██░░██████████─ #
+# ─██░░░░░░░░░░░░██─██░░██─────────██░░██──██░░██─██░░██─────────██░░░░░░░░░░██───██░░░░░░░░░░██─ #
+# ─██░░████████░░██─██░░██─────────██░░██──██░░██─██░░██─────────██░░██████░░██───██████████░░██─ #
+# ─██░░██────██░░██─██░░██─────────██░░██──██░░██─██░░██─────────██░░██──██░░██───────────██░░██─ #
+# ─██░░████████░░██─██░░██████████─██░░██████░░██─██░░██████████─██░░██──██░░████─██████████░░██─ #
+# ─██░░░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░██──██░░░░██─██░░░░░░░░░░██─ #
+# ─████████████████─██████████████─██████████████─██████████████─██████──████████─██████████████─ #
+# ─────────────────────────────────────────────────────────────────────────────────────────────── #
+#                              BY: RoyalNinja  ALL RIGHTS RESERVED.                               #
+# ─────────────────────────────────────────────────────────────────────────────────────────────── #
+
+
+# ITEM #
+
+# Configuration for the Chunk Block Item 
+chunkblock-item: 
+    id: '137'
+    display-name: "&b&lChunk Block"
+    lore:
+      - "&cPlace this block inside a chunk to"
+      - "&ckeep it generated when you are away!"
+      
+# COMMAND #
+
+# The permission for the Chunk Block give command.
+chunk-block-command-permission: "chunkblock.give"
+
+# HOLOGRAMS #
+hologram-display: "&bChunk Block"
+
+# SETTINGS #
+
+#Set to false if you don't want Chunk Blocks to keep mobs from despawning.
+disable-mob-despawning: true
+#The speed at which the plugin checks for mobs around Chunk Blocks. Lower numbers MAY cause lag. Number is in ticks. (20 ticks = one second)
+chunk-block-mob-check-rate: 10
+#The radius around Chunk Blocks that mobs are not despawned.
+chunk-block-mob-check-radius: 10
+# Set to true if you want only the person who places a Chunk Block to be able to destroy it.
+only-removable-by-owner: false
+# Set to false if you want the Chunk Block to dissapear when it is mined.
+drop-block-on-destroy: true
+
+
+# MESSAGES #
+
+# The message it sends to the person receiving a Chunk Block from the command. %player% is replaced with the name of the giver.
+chunk-block-receive-message: "&b%player% has given you a Chunk Block."
+# The message it sends to the command executer when he/she gives a player a Chunk Block. %target% is replaced with the name of the person receiving the Chunk Block.
+chunk-block-give-message: "&bYou have given %target% a Chunk Block."
+# The message to send when the specified player is not found. Replaces %player% with the target players name.
+command-player-not-found-message: "&cThe player %player% cannot be found."
+# The message that is sent when the command is typed in wrong (with invalid arguments etc).
+invalid-command-message: "&cInvalid command! /chunkblock <player>"
+# The message that is sent when the user does not have permission to execute the command.
+no-permission-execute-command-message: "&cYou do not have permission to execute this command."
+# Message that is sent when someone attempts to break a Chunk Block but is not the owner AND only-removable-by-owner is set to true.
+not-owner-place-message: "&cOnly the owner of this Chunk Block may break it."
+# Message that is sent when a Chunk Block is placed.
+chunk-block-place-message: "&bYou have placed a &b&lChunk Block."
+# Message that is sent when a Chunk Block is destroyed.
+chunk-block-destroy-message: "&cYou have destroyed a &lChunk Block."
+
+

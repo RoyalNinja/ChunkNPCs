@@ -1,0 +1,8 @@
+name: ChunkBlocks
+version: 1.0.0
+main: com.royalninja.chunkblocks.Main
+description: A plugin that allows you to place blocks that keep chunks loaded.
+commands:
+     chunkblock:
+         usage: /<command>
+         description: Give players Chunk Blocks.
